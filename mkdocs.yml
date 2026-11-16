@@ -1,0 +1,53 @@
+site_name: i-dle 團體與成員發展 Wiki
+site_description: 以來源為基礎整理 i-dle 團體歷程、作品與成員個人發展
+site_url: https://你的GitHub帳號.github.io/idle-wiki/
+theme:
+  name: material
+  language: zh-TW
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/weather-night
+        name: 切換暗色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/weather-sunny
+        name: 切換亮色模式
+nav:
+  - 首頁: index.md
+  - 團體介紹: group.md
+  - 發展時間軸: timeline.md
+  - 成員:
+      - Miyeon: members/miyeon.md
+      - Minnie: members/minnie.md
+      - Soyeon: members/soyeon.md
+      - Yuqi: members/yuqi.md
+      - Shuhua: members/shuhua.md
+  - 作品索引: works/index.md
+  - 用 LLM 提問: llm-wiki.md
+  - Wiki 索引: wiki-index.md
+  - 更新紀錄: log.md
+  - 資料來源: sources.md
+extra_css:
+  - stylesheets/extra.css
+extra_javascript:
+  - javascripts/ask.js
+markdown_extensions:
+  - toc
+  - tables
+  - fenced_code
+  - attr_list
+  - md_in_html
